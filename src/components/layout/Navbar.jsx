@@ -12,16 +12,16 @@ export function Navbar({ onOpenWaitlist }) {
         </a>
         
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-ink/80">
+          <a href="/#" className="hover:text-ink transition-colors">Home</a>
           <a href="/#problem" className="hover:text-ink transition-colors">Problem</a>
-          <a href="/#architecture" className="hover:text-ink transition-colors">Platform</a>
-          <a href="/#mvp" className="hover:text-ink transition-colors">Roadmap</a>
-          <a href="/#about" className="hover:text-ink transition-colors">About</a>
-          <a href="/#contact" className="hover:text-ink transition-colors">Contact</a>
+          <a href="/#ecosystem" className="hover:text-ink transition-colors">Platform</a>
+          <a href="/#capabilities" className="hover:text-ink transition-colors">Capabilities</a>
+          <a href="/#trust" className="hover:text-ink transition-colors">Trust</a>
         </nav>
 
         <div className="flex items-center gap-4">
           <Button variant="coral" size="sm" onClick={onOpenWaitlist}>
-            Join Waitlist
+            Request Demo
           </Button>
         </div>
       </div>

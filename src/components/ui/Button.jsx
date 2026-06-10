@@ -7,7 +7,7 @@ export function Button({
   children, 
   ...props 
 }) {
-  const baseStyles = "inline-flex items-center justify-center font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ink disabled:pointer-events-none disabled:opacity-50 whitespace-nowrap rounded-xl";
+  const baseStyles = "inline-flex items-center justify-center font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ink disabled:pointer-events-none disabled:opacity-50 whitespace-nowrap rounded-xl cursor-pointer";
   
   const variants = {
     primary: "bg-ink text-canvas shadow-md hover:shadow-lg hover:-translate-y-0.5 hover:bg-ink/90",

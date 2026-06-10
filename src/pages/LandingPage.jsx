@@ -1,25 +1,27 @@
 import { Hero } from "../components/sections/Hero";
 import { Problem } from "../components/sections/Problem";
-import { Architecture } from "../components/sections/Architecture";
-import { MVP } from "../components/sections/MVP";
-import { Audience } from "../components/sections/Audience";
-import { Philosophy } from "../components/sections/Philosophy";
-import { About } from "../components/sections/About";
-import { BuildingInPublic } from "../components/sections/BuildingInPublic";
-import { Contact } from "../components/sections/Contact";
+import { WhatIsEdflo } from "../components/sections/WhatIsEdflo";
+import { DayWithEdflo } from "../components/sections/DayWithEdflo";
+import { CoreCapabilities } from "../components/sections/CoreCapabilities";
+import { Analytics } from "../components/sections/Analytics";
+import { WhyChooseEdflo } from "../components/sections/WhyChooseEdflo";
+import { TrustGovernance } from "../components/sections/TrustGovernance";
+import { FutureVision } from "../components/sections/FutureVision";
+import { FinalCTA } from "../components/sections/FinalCTA";
 
 export function LandingPage({ onOpenWaitlist }) {
   return (
     <main>
       <Hero onOpenWaitlist={onOpenWaitlist} />
       <Problem />
-      <Architecture />
-      <MVP />
-      <Audience />
-      <Philosophy />
-      <About />
-      <BuildingInPublic onOpenWaitlist={onOpenWaitlist} />
-      <Contact />
+      <WhatIsEdflo />
+      <DayWithEdflo />
+      <CoreCapabilities />
+      <Analytics />
+      <WhyChooseEdflo />
+      <TrustGovernance />
+      <FutureVision />
+      <FinalCTA onOpenWaitlist={onOpenWaitlist} />
     </main>
   );
 }
