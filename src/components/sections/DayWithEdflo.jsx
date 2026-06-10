@@ -37,7 +37,7 @@ export function DayWithEdflo() {
               One Platform. Every Stakeholder.
             </h2>
             <p className="text-xl text-ink/70">
-              Tailored experiences for everyone on campus, connected by a single unified database.
+              Everyone works from the same, always up-to-date data with permissions built for their role.
             </p>
           </div>
         </FadeIn>
@@ -48,10 +48,9 @@ export function DayWithEdflo() {
             icon={Building2}
             delay={0.1}
             items={[
-              "Manage students",
-              "Manage faculty",
-              "Configure departments",
-              "Control permissions"
+              "Add/remove students, assign sections, manage USN",
+              "Onboard faculty, assign departments, control permissions",
+              "Create departments, manage sections, set system-wide rules"
             ]}
           />
           <StakeholderCard 
@@ -59,9 +58,9 @@ export function DayWithEdflo() {
             icon={Users}
             delay={0.2}
             items={[
-              "Mark attendance",
-              "Enter marks",
-              "Track student progress"
+              "Mark attendance in bulk for 50+ students per class",
+              "Upload marks (midterm, finals, assignments) in one place",
+              "View student attendance %, performance trends, identify at-risk students"
             ]}
           />
           <StakeholderCard 
@@ -69,9 +68,9 @@ export function DayWithEdflo() {
             icon={GraduationCap}
             delay={0.3}
             items={[
-              "View attendance",
-              "View marks",
-              "Monitor academic performance"
+              "Real-time attendance % for each subject",
+              "See marks for all subjects and assessments instantly",
+              "Track GPA, subject performance, and academic standing"
             ]}
           />
           <StakeholderCard 
@@ -79,8 +78,8 @@ export function DayWithEdflo() {
             icon={Users2}
             delay={0.4}
             items={[
-              "Track attendance",
-              "View performance updates"
+              "See your child's attendance % across all classes",
+              "Get real-time updates on marks and academic performance"
             ]}
           />
         </div>

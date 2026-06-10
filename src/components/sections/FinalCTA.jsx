@@ -20,33 +20,34 @@ export function FinalCTA({ onOpenWaitlist }) {
         <div className="max-w-4xl mx-auto text-center">
           <FadeIn>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-8">
-              Ready to run a <br className="hidden md:block"/>
-              better campus?
+              Ready to transform <br className="hidden md:block"/>
+              your campus?
             </h2>
           </FadeIn>
           
           <FadeIn delay={0.1}>
             <p className="text-xl md:text-2xl text-white/80 leading-relaxed mb-12 max-w-2xl mx-auto font-light">
-              Join the early access program and see how Edflo can transform your institution's operations.
+              Join early-access colleges and manage attendance, marks, and campus operations in one place.
             </p>
           </FadeIn>
           
-          <FadeIn delay={0.2} className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <FadeIn delay={0.2} className="flex flex-col items-center justify-center gap-6">
             <Button 
               size="lg" 
-              className="w-full sm:w-auto bg-white text-coral hover:bg-white/90 hover:scale-105 transition-all shadow-xl"
+              className="w-full sm:w-auto px-12 bg-white text-coral hover:bg-white/90 hover:scale-105 transition-all shadow-xl"
               onClick={onOpenWaitlist}
             >
               Request Demo
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="w-full sm:w-auto border-white/30 text-white bg-white/10"
-              onClick={() => window.location.href = 'mailto:hello@edflo.com'}
-            >
-              Contact Sales
-            </Button>
+            <div className="flex flex-col gap-2">
+              <p className="text-sm text-white/60">
+                Questions? Reach out to us at <a href="mailto:hello@edflo.com" className="text-white underline hover:opacity-80">hello@edflo.com</a>
+              </p>
+              <div className="inline-flex items-center justify-center gap-2 mt-4 px-4 py-1.5 bg-white/10 border border-white/10 rounded-full">
+                <span className="w-2 h-2 rounded-[2px] bg-white opacity-80 animate-pulse"></span>
+                <span className="text-sm font-medium text-white/90 tracking-wide">Pricing Coming Soon</span>
+              </div>
+            </div>
           </FadeIn>
         </div>
       </Container>

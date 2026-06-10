@@ -21,16 +21,23 @@ export function WhatIsEdflo() {
   return (
     <section id="ecosystem" className="py-24 bg-white relative overflow-hidden">
       <Container>
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="max-w-3xl mx-auto mb-20">
           <FadeIn>
-            <h2 className="text-3xl md:text-5xl font-medium mb-6 tracking-tight">
-              The Campus Operating System
+            <h2 className="text-3xl md:text-5xl font-medium mb-6 tracking-tight text-center">
+              What is Edflo?
             </h2>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <p className="text-xl text-ink/70 leading-relaxed">
-              Edflo connects administration, faculty, students, and parents through one unified academic platform.
+            <p className="text-xl text-ink/80 font-medium mb-6 text-center">
+              One unified platform where:
             </p>
+            <ul className="space-y-3 text-lg text-ink/70 max-w-lg mx-auto list-none">
+              <li className="flex gap-3"><span className="text-coral">→</span> Faculty mark attendance and upload marks</li>
+              <li className="flex gap-3"><span className="text-coral">→</span> Students view real-time attendance and academic results</li>
+              <li className="flex gap-3"><span className="text-coral">→</span> Admins manage users, roles, and permissions</li>
+              <li className="flex gap-3"><span className="text-coral">→</span> Parents track their child's progress</li>
+              <li className="flex gap-3"><span className="text-coral">→</span> Everyone works from the same, always up-to-date data</li>
+            </ul>
           </FadeIn>
         </div>
 

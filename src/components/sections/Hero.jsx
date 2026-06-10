@@ -112,15 +112,14 @@ export function Hero({ onOpenWaitlist }) {
             </FadeIn>
             
             <FadeIn delay={0.1}>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-tight mb-8">
-                Campus Operations. <br/>
-                <span className="text-transparent bg-clip-text bg-linear-to-r from-ink to-coral">Reimagined.</span>
+              <h1 className="text-5xl md:text-6xl lg:text-[4.2rem] font-semibold leading-[1.1] tracking-tight mb-8 max-w-2xl">
+                One Platform for <span className="text-transparent bg-clip-text bg-linear-to-r from-ink to-coral">Attendance, Marks & Campus Operations.</span>
               </h1>
             </FadeIn>
             
             <FadeIn delay={0.2}>
               <p className="text-xl md:text-2xl text-ink/70 leading-relaxed max-w-xl mb-10">
-                A modern operating system for colleges that brings attendance, academics, faculty workflows, student insights, and administration into one connected platform.
+                Faculty marks attendance in 2 clicks. Students see marks instantly. Admins manage roles and permissions from one dashboard.
               </p>
             </FadeIn>
             
@@ -129,7 +128,7 @@ export function Hero({ onOpenWaitlist }) {
                 Request Demo
               </Button>
               <Button variant="secondary" size="lg" className="w-full sm:w-auto" onClick={() => window.location.href = '#problem'}>
-                See How It Works
+                Learn More
               </Button>
             </FadeIn>
             

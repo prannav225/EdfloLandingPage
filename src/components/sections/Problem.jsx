@@ -1,13 +1,16 @@
 import { Container } from "../ui/Container";
 import { FadeIn } from "../ui/FadeIn";
 
-const PainPointCard = ({ title, delay }) => (
+const PainPointCard = ({ title, description, delay }) => (
   <FadeIn delay={delay} className="h-full">
-    <div className="p-5 bg-white border border-ink/5 rounded-xl shadow-sm flex items-center gap-4 transition-transform hover:-translate-y-1 h-full">
-      <div className="w-8 h-8 rounded-full bg-coral/10 flex items-center justify-center shrink-0">
-        <div className="w-2.5 h-2.5 bg-coral rounded-[2px]"></div>
+    <div className="p-6 bg-white border border-ink/5 rounded-xl shadow-sm flex flex-col gap-4 transition-transform hover:-translate-y-1 h-full">
+      <div className="w-10 h-10 rounded-full bg-coral/10 flex items-center justify-center shrink-0">
+        <div className="w-3 h-3 bg-coral rounded-[2px]"></div>
       </div>
-      <p className="text-ink/80 font-medium">{title}</p>
+      <div>
+        <h3 className="text-lg font-semibold text-ink mb-2">{title}</h3>
+        <p className="text-ink/70 leading-relaxed">{description}</p>
+      </div>
     </div>
   </FadeIn>
 );
@@ -30,13 +33,13 @@ export function Problem() {
           </h2>
         </FadeIn>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24 max-w-5xl mx-auto">
-           <PainPointCard title="Attendance in one tool" delay={0.1} />
-           <PainPointCard title="Marks in spreadsheets" delay={0.2} />
-           <PainPointCard title="Reports generated manually" delay={0.3} />
-           <PainPointCard title="Faculty using disconnected workflows" delay={0.4} />
-           <PainPointCard title="Students lacking visibility" delay={0.5} />
-           <PainPointCard title="Parents staying uninformed" delay={0.6} />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24 max-w-6xl mx-auto">
+           <PainPointCard title="Less Administrative Work" description="Stop managing attendance in 3 different tools. Mark once, sync everywhere." delay={0.1} />
+           <PainPointCard title="Better Faculty Experience" description="Mark 100 students' attendance in 2 minutes. Upload marks without spreadsheets." delay={0.2} />
+           <PainPointCard title="Greater Student Visibility" description="Students see their attendance % and marks instantly—no more 'when will results come out?'" delay={0.3} />
+           <PainPointCard title="Parent Transparency" description="Parents track their child's attendance and performance in real-time." delay={0.4} />
+           <PainPointCard title="Actionable Insights" description="See attendance trends, identify at-risk students, and track performance by department." delay={0.5} />
+           <PainPointCard title="One Unified Platform" description="Replace your fragmented tools with a single campus operating system." delay={0.6} />
         </div>
 
         <FadeIn delay={0.8}>
